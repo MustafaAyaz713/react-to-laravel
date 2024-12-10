@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.backgroundImage {
+  position: absolute;
+  background-image: url("Images/UniversityImage.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url("Images/UniversityImage.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+}

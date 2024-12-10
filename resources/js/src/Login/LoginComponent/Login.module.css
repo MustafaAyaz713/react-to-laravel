@@ -1,0 +1,159 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+/* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 #ced4da */
+* {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.together {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 52px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 900px;
+  padding: 40px;
+  border-radius: 1px;
+}
+
+.container {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid #868e96;
+  background-color: rgba(255, 255, 255, 0.84);
+  padding: 20px;
+  height: 700px;
+}
+.signup {
+  border: 1px solid #868e96;
+  grid-column-start: 2;
+  background-color: rgba(255, 255, 255, 0.84);
+  padding: 20px;
+  height: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  background-color: red;
+  grid-row: span 2;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.flexcontainer {
+  display: grid;
+  grid-template-columns: repeat(1, 350px);
+  grid-template-rows: repeat(4, 45px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  width: 275px;
+  margin-top: 60px;
+  margin-bottom: 130px;
+  margin-left: 55px;
+}
+.input {
+  padding: 4px;
+  border: none;
+  outline: none;
+  width: 250px;
+  background-color: #dee2e6;
+}
+.input :focus {
+  border: none;
+  outline: none;
+}
+.userIcon {
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+}
+.label {
+  display: flex;
+  gap: 10px;
+  border: 1.5px solid black;
+  background-color: #dee2e6;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+button {
+  grid-row-start: 4;
+  width: 100%;
+  height: 45px;
+  background: rgb(0, 149, 246);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #f0f0f0;
+  font-weight: 700;
+  transition: transform 0.3s ease; /* Geçiş animasyonu burada olmalı */
+}
+button:hover {
+  background: rgb(0, 149, 246); /* Daha açık bir renk */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Parlak efekt */
+  color: #f0f0f0; /* Yazı rengini belirginleştirin */
+  transform: scale(1.2); /* 1.2 kat büyüt */
+}
+
+.flexForgotPassword {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  place-items: center;
+  gap: 24px;
+}
+.flexForgotPassword p,
+.flexForgotPassword a {
+  display: inline-block; /* Elemanları doğal genişlikte tut */
+}
+.flexForgotPassword a {
+  color: #000000;
+  text-decoration: none;
+}
+.flexForgotPassword a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.flexForgotPassword p {
+  color: #000000;
+  font-size: 14px;
+}
+.melik {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.signup p,
+.signup a {
+  display: inline-block;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+}
+.signup a {
+  color: rgb(0, 149, 246);
+  font-weight: 500;
+  text-decoration: none;
+}
+.signup a:hover {
+  text-decoration: underline;
+}
